@@ -5,5 +5,6 @@ package com.badlogic.drop;
  * Per http://stackoverflow.com/questions/21576181/pause-resume-a-simple-libgdx-game-for-android
  */
 public enum State {
+    // Implement pause/resume
     RUN, PAUSE
 }

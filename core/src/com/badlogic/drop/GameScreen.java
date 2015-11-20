@@ -173,13 +173,15 @@ public class GameScreen implements Screen {
     @Override
     public void pause() {
         // Implement pause/resume
-        // this.state = State.PAUSE;
+        // (method not actually used)
+        this.state = State.PAUSE;
     }
 
     @Override
     public void resume() {
         // Implement pause/resume
-        // this.state = State.RUN;
+        // (method not actually used)
+        this.state = State.RUN;
     }
 
     @Override
