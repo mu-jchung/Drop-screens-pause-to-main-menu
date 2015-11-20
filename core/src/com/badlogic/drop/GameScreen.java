@@ -149,6 +149,7 @@ public class GameScreen implements Screen {
                     }
                 }
                 break;
+
             case PAUSE:
                 break;
         }// end switch
@@ -172,13 +173,13 @@ public class GameScreen implements Screen {
     @Override
     public void pause() {
         // Implement pause/resume
-        this.state = State.PAUSE;
+        // this.state = State.PAUSE;
     }
 
     @Override
     public void resume() {
         // Implement pause/resume
-        this.state = State.RUN;
+        // this.state = State.RUN;
     }
 
     @Override
@@ -190,7 +191,7 @@ public class GameScreen implements Screen {
     }
 
     // Implement pause/resume
-    public void setGameState(State s){
+    public void setGameState(State s) {
         this.state = s;
     }
 
