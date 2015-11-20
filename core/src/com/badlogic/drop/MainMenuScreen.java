@@ -9,10 +9,16 @@ public class MainMenuScreen implements Screen {
 
     final Drop game;
 
+    // Implement pausing to main menu
+    GameScreen gamescreen;
+
     OrthographicCamera camera;
 
     public MainMenuScreen(final Drop gam) {
         game = gam;
+
+        // Implement pausing to main menu
+        gamescreen = new GameScreen(game, this);
 
         camera = new OrthographicCamera();
         camera.setToOrtho(false, 800, 480);
@@ -34,7 +40,12 @@ public class MainMenuScreen implements Screen {
         game.batch.end();
 
         if (Gdx.input.isTouched()) {
-            game.setScreen(new GameScreen(game));
+            // game.setScreen(new GameScreen(game));
+            // dispose();
+
+            // Implement pausing to main menu
+            gamescreen.setGameState(State.RUN);
+            game.setScreen(gamescreen);
             dispose();
         }
     }
