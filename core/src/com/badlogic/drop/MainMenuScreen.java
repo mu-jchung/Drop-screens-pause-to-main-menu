@@ -18,6 +18,7 @@ public class MainMenuScreen implements Screen {
         game = gam;
 
         // Implement pause to main menu
+        // Pass this MainMenuScreen to the GameScreen.
         gamescreen = new GameScreen(game, this);
 
         camera = new OrthographicCamera();
@@ -43,7 +44,8 @@ public class MainMenuScreen implements Screen {
             // game.setScreen(new GameScreen(game));
             // dispose();
 
-            // Implement pause to main menu
+            // Implement pause to main menu;
+            // switches back to game screen to resume game
             gamescreen.setGameState(State.RUN);
             game.setScreen(gamescreen);
             dispose();

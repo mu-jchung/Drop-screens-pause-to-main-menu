@@ -101,7 +101,8 @@ public class GameScreen implements Screen {
         if (Gdx.input.isKeyJustPressed(Keys.ESCAPE)) {
             if (state == State.RUN) {
                 setGameState(State.PAUSE);
-                // Completely quits to main menu screen // game.setScreen(new MainMenuScreen(game));
+                // Completely quits to main menu screen
+                // game.setScreen(new MainMenuScreen(game));
                 // dispose();
 
                 // Implement pause to main menu
@@ -111,6 +112,9 @@ public class GameScreen implements Screen {
 
             // Implement pause to main menu
             // Will setGameState(State.RUN) on return from main menu.
+            // See MainMenuScreen.java.
+
+            // Not needed:
             /*
             else {
                 setGameState(State.RUN);
