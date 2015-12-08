@@ -19,7 +19,7 @@ import com.badlogic.gdx.utils.TimeUtils;
 public class GameScreen implements Screen {
     final Drop game;
 
-    // Implement pausing to main menu
+    // Implement pause to main menu
     MainMenuScreen mainmenu;
 
     // Implement pause/resume
@@ -38,10 +38,10 @@ public class GameScreen implements Screen {
 
     // public GameScreen(final Drop gam) {
 
-    // Implement pausing to main menu
+    // Implement pause to main menu
     public GameScreen(final Drop gam, MainMenuScreen pmainmenu) {
         this.game = gam;
-        // Implement pausing to main menu
+        // Implement pause to main menu
         this.mainmenu = pmainmenu;
 
         // load the images for the droplet and the bucket, 64x64 pixels each
@@ -104,12 +104,12 @@ public class GameScreen implements Screen {
                 // Completely quits to main menu screen // game.setScreen(new MainMenuScreen(game));
                 // dispose();
 
-                // Implement pausing to main menu
+                // Implement pause to main menu
                 game.setScreen(mainmenu);
                 // Do not // dispose(); // else, sprites are replaced by black boxes
             }
 
-            // Implement pausing to main menu
+            // Implement pause to main menu
             // Will setGameState(State.RUN) on return from main menu.
             /*
             else {

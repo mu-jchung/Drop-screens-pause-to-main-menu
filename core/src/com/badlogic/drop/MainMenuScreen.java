@@ -9,7 +9,7 @@ public class MainMenuScreen implements Screen {
 
     final Drop game;
 
-    // Implement pausing to main menu
+    // Implement pause to main menu
     GameScreen gamescreen;
 
     OrthographicCamera camera;
@@ -17,7 +17,7 @@ public class MainMenuScreen implements Screen {
     public MainMenuScreen(final Drop gam) {
         game = gam;
 
-        // Implement pausing to main menu
+        // Implement pause to main menu
         gamescreen = new GameScreen(game, this);
 
         camera = new OrthographicCamera();
@@ -43,7 +43,7 @@ public class MainMenuScreen implements Screen {
             // game.setScreen(new GameScreen(game));
             // dispose();
 
-            // Implement pausing to main menu
+            // Implement pause to main menu
             gamescreen.setGameState(State.RUN);
             game.setScreen(gamescreen);
             dispose();
